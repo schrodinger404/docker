@@ -13,7 +13,7 @@ docker pull schrodinger404/login:v1
 docker pull ghcr.io/schrodinger404/login:v1
 ```
 
-## Run the downloaded docker images
+### Run the downloaded docker images
 ```
 # Run Docker Container
 docker run --name <CONTAINER-NAME> -p <HOST_PORT>:<CONTAINER_PORT> -d <IMAGE_NAME>:<TAG>
@@ -25,7 +25,7 @@ docker run --name mylogin -p 8080:80 -d schrodinger404/login:v1
 docker run --name mylogin -p 8080:80 -d ghcr.io/stacksimplify/mynginx:v1
 ```
 
-## List running containers
+### List running containers
 ```
 # List only running containers
 docker ps
@@ -44,7 +44,7 @@ ls
 hostname
 exit  # To exit the container's terminal
 ```
-## Stop, Start docker containers
+### Stop, Start docker containers
 ```
 # Stop a running container
 docker stop <CONTAINER-NAME>
@@ -62,7 +62,7 @@ docker start myapp1
 docker ps
 ```
 
-## Remove docker containers
+### Remove docker containers
 ```
 # Stop the container if it's still running
 docker stop <CONTAINER-NAME>
@@ -77,7 +77,7 @@ docker rm -f <CONTAINER-NAME>
 docker rm -f mylogin
 ```
 
-## Remove images
+### Remove images
 ```
 # List Docker images
 docker images
