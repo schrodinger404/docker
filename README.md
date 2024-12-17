@@ -1,7 +1,7 @@
-# docker
+# Docker
 learning docker
 
-## to pull the docker image
+### to pull the docker image
 ```
 # List Docker images
 docker images
