@@ -1,6 +1,8 @@
 # Docker
 learning docker
 
+## Basic Commands
+
 ### to pull the docker image
 ```
 # List Docker images
@@ -93,4 +95,21 @@ docker rmi <IMAGE-NAME>:<IMAGE-TAG>
 
 # Example:
 docker rmi schrodinger404/mylogin:v1
+```
+
+### How to run base Nginx
+```
+# Run the default Nginx Docker Image
+docker run --name <CONTAINER-NAME> -p <HOST_PORT>:<CONTAINER_PORT> -d <IMAGE_NAME>:<TAG>
+
+# Example:
+docker run --name myapp -p 8080:80 -d nginx
+
+# List running Docker containers
+docker ps
+
+# yu can access the running container on localhost 8080
+
+# Stop and remove the Docker container
+docker rm -f myapp1
 ```
